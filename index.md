@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## About Us
+Wren Security is a CDDL-licensed, community fork of the following ForgeRock products:
+- OpenAM (rebranded here as wren:AM)
+- OpenDJ (rebranded here as wren:DS)
+- OpenIDM (rebranded here as wren:IDM)
+- OpenIG (rebranded here as wren:IG)
+- OpenICF (rebranded here as wren:ICF)
 
-You can use the [editor on GitHub](https://github.com/WrenSecurity/wrensec-website/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Though our project originated with code that ForgeRock previously release, we are not affiliated with ForgeRock in any way.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Our projects are based on the very latest code that ForgeRock released under a CDDL license (OpenAM 13.5+, OpenDJ 3+, OpenIDM 4.5+, and OpenIG 4.0+).
 
-### Markdown
+ForgeRock no longer releases any of the most recent versions of their software under an open-source license. ForgeRock's "Community Edition" versions are much older (OpenAM 11, OpenDJ 2.6, OpenIDM 2.1, and OpenIG 2.1).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Join the Community
+We have an active international community of security developers and consultants.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/WrenSecurity/wrensec-website/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Sign-up at [timeforafork.com](http://www.timeforafork.com/) to join our Google Group and Gitter community.
