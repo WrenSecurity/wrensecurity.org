@@ -1,10 +1,10 @@
 ## About Us
 Wren Security is a CDDL-licensed, community fork of the following ForgeRock products:
-- OpenAM (rebranded here as wren:AM)
-- OpenDJ (rebranded here as wren:DS)
-- OpenIDM (rebranded here as wren:IDM)
-- OpenIG (rebranded here as wren:IG)
-- OpenICF (rebranded here as wren:ICF)
+- OpenAM (rebranded here as Wren:AM)
+- OpenDJ (rebranded here as Wren:DS)
+- OpenIDM (rebranded here as Wren:IDM)
+- OpenIG (rebranded here as Wren:IG)
+- OpenICF (rebranded here as Wren:ICF)
 
 Though our project originated with code that ForgeRock previously released, we are not affiliated with ForgeRock in any way.
 
@@ -15,4 +15,9 @@ ForgeRock no longer releases any of the most recent versions of their software u
 ## Join the Community
 We have an active international community of security developers and consultants.
 
-Sign-up at [timeforafork.com](http://www.timeforafork.com/) to join our Google Group and Gitter community.
+Join us:
+- [Google Groups](https://groups.google.com/forum/#!forum/wren-security)
+- [Gitter](https://gitter.im/WrenSecurity/Lobby)
+
+## Sponsors
+![Powered by JFrog Artifactory]({{ site.url }}/assets/powered-by-jfrog-artifactory.png)
