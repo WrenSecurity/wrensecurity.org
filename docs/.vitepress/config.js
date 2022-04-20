@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/wrensec-website/',
   title: 'Wren Security',
   description: 'The Wren Security Suite.',
   themeConfig: {
