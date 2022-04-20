@@ -7,3 +7,7 @@
   height: 30px;
   margin-right: 8px;
 }
+
+h1#sponsors ~ table td img {
+  max-width: 250px;
+}

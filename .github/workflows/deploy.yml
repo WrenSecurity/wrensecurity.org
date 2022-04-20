@@ -22,5 +22,5 @@ jobs:
         cd docs/.vitepress/dist
         git init && git checkout -b main
         git add -A
-        git commit -m 'Deploy ${GITHUB_SHA::7}'
+        git commit -m 'Deploy ${{ github.sha }}'
         git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/WrenSecurity/wrensec-website.git main:gh-pages

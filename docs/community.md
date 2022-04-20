@@ -15,7 +15,7 @@ If you would like to become involved in the development process of Wren Security
 
 # Contributor Guidelines
 
-If you want to start contributing changes, then the first step is to read our [Contributor Guidelines](https://github.com/WrenSecurity/wrensec-docs/wiki/Contributor-Guidelines#introduction)
+If you want to start contributing changes, then the first step is to read our [Contributor Guidelines](https://github.com/WrenSecurity/wrensec-docs/wiki/Contributor-Guidelines#introduction).
 
 
 # Become a team member
