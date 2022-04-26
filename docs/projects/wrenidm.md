@@ -2,8 +2,7 @@
 title: Wren:IDM
 ---
 
-<project-logo src="/wrenidm-logo.png" alt="Wren:IDM logo" />
-
+![Wren:IDM logo](/wrenidm-logo.png) {.project-logo}
 
 ## Introduction
 

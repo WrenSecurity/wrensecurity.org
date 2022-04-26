@@ -11,10 +11,10 @@ Sponsors are listed in no particular order within each section, with just the lo
 
 | Company | Website | Location |
 | -------------------------------- |-----------------------------------| ---------------|
-| ![Orchitech logo](/orchitech.png) | [orchi.tech](https://orchi.tech/) | Czech Republic |
+| ![Orchitech logo](/orchitech.png) {.sponsor-logo} | [orchi.tech](https://orchi.tech/) | Czech Republic |
 
 # Thank you
 
 | Company | Description |
 | -------------------------------- |-----------------------------------|
-| ![JFrog Artifactory logo](/jfrog-artifactory.png) | We use JFrog [Artifactory](https://jfrog.com/artifactory/) to host binaries when working on the Wren Security projects. |
+| ![JFrog Artifactory logo](/jfrog-artifactory.png) {.thankyou-logo} | We use JFrog [Artifactory](https://jfrog.com/artifactory/) to host binaries when working on the Wren Security projects. |

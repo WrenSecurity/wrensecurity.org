@@ -12,6 +12,14 @@
   max-height: 220px;
 }
 
-h1#sponsors ~ table td img {
+.project-logo img {
+  max-width: 450px;
+}
+
+.sponsor-logo img {
+  max-width: 300px;
+}
+
+.thankyou-logo img {
   max-width: 300px;
 }
