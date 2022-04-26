@@ -1,4 +1,13 @@
-import DefaultTheme from 'vitepress/theme'
+import Theme from 'vitepress/theme'
+// Custom components
+import ProjectLogo from '../components/ProjectLogo.vue'
+// Custom styles
 import './custom.css'
 
-export default DefaultTheme
+export default {
+  ...Theme,
+
+  enhanceApp({ app }) {
+    app.component('project-logo', ProjectLogo)
+  }
+}

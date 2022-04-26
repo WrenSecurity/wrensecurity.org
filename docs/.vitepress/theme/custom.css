@@ -8,6 +8,10 @@
   margin-right: 8px;
 }
 
+.home-hero .figure .image {
+  max-height: 220px;
+}
+
 h1#sponsors ~ table td img {
-  max-width: 250px;
+  max-width: 300px;
 }

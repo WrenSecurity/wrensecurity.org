@@ -1,3 +1,6 @@
+//~ Custom Markdown plugins
+import MarkdownItInclude from 'markdown-it-include'
+
 module.exports = {
   base: '/wrensec-website/',
   title: 'Wren Security',
@@ -15,7 +18,12 @@ module.exports = {
           { text: "Wren:ICF", link: "/projects/wrenicf" },
         ]
       },
-      { text: "Releases", link: "/releases/" },
+      {
+        text: "Releases",
+        items: [
+          { text: "Wren:IDM", link: "/releases/wrenidm" },
+        ]
+      },
       { text: "Blog", link: "/blog/" },
       { text: "Community", link: "/community" },
       { text: "Sponsors", link: "/sponsors" },
@@ -28,6 +36,12 @@ module.exports = {
         { text: "Wren:DS", link: "/projects/wrends" },
         { text: "Wren:ICF", link: "/projects/wrenicf" },
       ],
+      "/releases/": [
+        { text: "Wren:IDM", link: "/releases/wrenidm" }
+      ],
     },
   },
+  markdown: {
+    config: md => md.use(MarkdownItInclude)
+  }
 }

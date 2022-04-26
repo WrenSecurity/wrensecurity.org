@@ -1,6 +1,6 @@
 ---
 home: true
-title: 'Wren Security'
+title: 'Home'
 heroImage: /wrensec-logo.png
 heroAlt: 'Wren Security logo'
 heroText: 'The Wren Security Suite'
@@ -21,6 +21,6 @@ footer: CDDL Licensed | Copyright © 2017-2022 Wren Security
 
 ::: tip Project Origin
 
-Though our project originated with code that ForgeRock™ had previously released, we are not affiliated with ForgeRock™ in any way. Our projects are based on the very latest code from what was available under a CDDL license (OpenAM 13.5+, OpenDJ 3.0+, OpenIDM 4.5+, and OpenIG 4.0+). ForgeRock™ no longer releases any of the most recent versions of their software under an open-source license. ForgeRock™’s “Community Edition” are ancient versions of the projects. Join our community for the latest and greatest.
+Though our project originated with code that ForgeRock™ had previously released, we are not affiliated with ForgeRock™ in any way. Our projects are based on the very latest code from what was available under a CDDL license (OpenAM 13.5+, OpenDJ 3.5+, OpenIDM 4.5+, and OpenIG 4.0+). ForgeRock™ no longer releases any of the most recent versions of their software under an open-source license. ForgeRock™’s “Community Edition” are ancient versions of the projects. Join our community for the latest and greatest.
 
 :::
