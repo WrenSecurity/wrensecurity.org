@@ -1,6 +1,3 @@
-//~ Custom Markdown plugins
-import MarkdownItInclude from 'markdown-it-include'
-
 module.exports = {
   base: '/wrensec-website/',
   title: 'Wren Security',
@@ -8,40 +5,72 @@ module.exports = {
   themeConfig: {
     logo: '/wren.png',
     nav: [
-      { text: "Home", link: "/" },
+      {
+        text: "Home",
+        link: "/" },
       {
         text: "Projects",
         items: [
-          { text: "Wren:IDM", link: "/projects/wrenidm" },
-          { text: "Wren:AM", link: "/projects/wrenam" },
-          { text: "Wren:DS", link: "/projects/wrends" },
-          { text: "Wren:ICF", link: "/projects/wrenicf" },
+          { text: "Wren:IDM", link: "/projects/wrenidm/" },
+          { text: "Wren:AM", link: "/projects/wrenam/" },
+          { text: "Wren:DS", link: "/projects/wrends/" },
+          { text: "Wren:ICF", link: "/projects/wrenicf/" },
         ]
       },
       {
-        text: "Releases",
+        text: "Blog",
+        link: "/blog/"
+      },
+      {
+        text: "Community",
         items: [
-          { text: "Wren:IDM", link: "/releases/wrenidm" },
+          { text: "Contact", link: "/community/contact" },
+          { text: "Get Involved", link: "/community/join" },
         ]
       },
-      { text: "Blog", link: "/blog/" },
-      { text: "Community", link: "/community" },
-      { text: "Sponsors", link: "/sponsors" },
-      { text: "Contact", link: "/contact" },
+      {
+        text: "Sponsors", link: "/sponsors"
+      },
     ],
     sidebar: {
-      "/projects/": [
-        { text: "Wren:IDM", link: "/projects/wrenidm" },
-        { text: "Wren:AM", link: "/projects/wrenam" },
-        { text: "Wren:DS", link: "/projects/wrends" },
-        { text: "Wren:ICF", link: "/projects/wrenicf" },
+      "/projects/wrenidm": [
+        {
+          text: "Wren:IDM",
+          children: [
+            { text: "Overview", link: "/projects/wrenidm/" },
+            { text: "How to Get", link: "/projects/wrenidm/download" },
+            { text: "Resources", link: "/projects/wrenidm/resources" },
+          ]
+        },
       ],
-      "/releases/": [
-        { text: "Wren:IDM", link: "/releases/wrenidm" }
+      "/projects/wrenam": [
+        {
+          text: "Wren:AM",
+          children: [
+            { text: "Overview", link: "/projects/wrenam/" },
+          ]
+        },
+      ],
+      "/projects/wrends": [
+        {
+          text: "Wren:DS",
+          children: [
+            { text: "Overview", link: "/projects/wrends/" },
+          ]
+        },
+      ],
+      "/projects/wrenicf": [
+        {
+          text: "Wren:ICF",
+          children: [
+            { text: "Overview", link: "/projects/wrenicf/" },
+          ]
+        },
+      ],
+      "/community/": [
+        { text: "Contact", link: "/community/contact" },
+        { text: "Get Involved", link: "/community/join" },
       ],
     },
   },
-  markdown: {
-    config: md => md.use(MarkdownItInclude)
-  }
 }

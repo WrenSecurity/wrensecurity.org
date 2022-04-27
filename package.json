@@ -7,7 +7,6 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "markdown-it-include": "^2.0.0",
     "vitepress": "^0.22.3"
   }
 }

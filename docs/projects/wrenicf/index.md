@@ -1,7 +1,11 @@
 ---
 title: Wren:ICF
+sidebarDepth: 2
 ---
 
-## Introduction
+
+# Wren:ICF
+
+## Overview
 
 Work in progress.

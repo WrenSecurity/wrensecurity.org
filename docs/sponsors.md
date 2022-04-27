@@ -9,12 +9,13 @@ home: true
 The following is a list of significant sponsors to Wren Security.
 Sponsors are listed in no particular order within each section, with just the location of the head office for each company shown.
 
-| Company | Website | Location |
-| -------------------------------- |-----------------------------------| ---------------|
-| ![Orchitech logo](/orchitech.png) {.sponsor-logo} | [orchi.tech](https://orchi.tech/) | Czech Republic |
+<sponsorItem logo="orchitech.png">
+  <p><a href="https://orchi.tech/en/" target="_blank">Orchitech</a> is a tech company from Prague, Czech Republic, with our very own team of developers and more than a decade of experience with solutions for user identity management.</p>
+</sponsorItem>
+
 
 # Thank you
 
-| Company | Description |
-| -------------------------------- |-----------------------------------|
-| ![JFrog Artifactory logo](/jfrog-artifactory.png) {.thankyou-logo} | We use JFrog [Artifactory](https://jfrog.com/artifactory/) to host binaries when working on the Wren Security projects. |
+<sponsorItem logo="jfrog-artifactory.png">
+  <p>We use JFrog <a href="https://jfrog.com/artifactory/" target="_blank">Artifactory</a> to host binaries needed for the build of the Wren Security projects.</p>
+</sponsorItem>

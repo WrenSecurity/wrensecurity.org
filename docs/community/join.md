@@ -1,6 +1,5 @@
 ---
-title: Community
-home: true
+title: Get Involved
 ---
 
 
@@ -13,12 +12,12 @@ If you would like to become involved in the development process of Wren Security
 * Contribute to the projects documentation.
 
 
-# Contributor Guidelines
+## Contributor Guidelines
 
 If you want to start contributing changes, then the first step is to read our [Contributor Guidelines](https://github.com/WrenSecurity/wrensec-docs/wiki/Contributor-Guidelines#introduction).
 
 
-# Become a team member
+## Become a team member
 
 Here are some of the roles we could use your help for:
 
