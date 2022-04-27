@@ -3,7 +3,7 @@ title: Wren:IDM
 ---
 
 
-# How to Get
+# Getting Started
 
 You can get Wren:IDM application in couple of ways.
 

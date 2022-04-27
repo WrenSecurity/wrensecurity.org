@@ -15,11 +15,11 @@ jobs:
         node-version: '17'
         cache: 'npm'
     - run: npm install
-    - run: npm run docs:build
+    - run: npm run site:build
     - run: |
         git config --global user.name 'wrensecurity'
         git config --global user.email 'wrensecurity@users.noreply.github.com'
-        cd docs/.vitepress/dist
+        cd site/.vitepress/dist
         git init && git checkout -b main
         git add -A
         git commit -m 'Deploy ${{ github.sha }}'

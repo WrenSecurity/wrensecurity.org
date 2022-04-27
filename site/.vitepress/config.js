@@ -1,9 +1,14 @@
-module.exports = {
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
   base: '/wrensec-website/',
   title: 'Wren Security',
   description: 'The Wren Security Suite.',
   themeConfig: {
     logo: '/wren.png',
+    head: [
+      ["meta", { name: "viewport", content: "width=device-width, initial-scale=1" } ],
+    ],
     nav: [
       {
         text: "Home",
@@ -38,7 +43,7 @@ module.exports = {
           text: "Wren:IDM",
           children: [
             { text: "Overview", link: "/projects/wrenidm/" },
-            { text: "How to Get", link: "/projects/wrenidm/download" },
+            { text: "Getting Started", link: "/projects/wrenidm/download" },
             { text: "Resources", link: "/projects/wrenidm/resources" },
           ]
         },
@@ -73,4 +78,4 @@ module.exports = {
       ],
     },
   },
-}
+})

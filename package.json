@@ -2,11 +2,16 @@
   "name": "wrensec-website",
   "version": "0.0.0",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "lint": "npx eslint 'site/.vitepress/**/*.{js,vue}'",
+    "site:dev": "vitepress dev site",
+    "site:build": "vitepress build site",
+    "site:serve": "vitepress serve site"
   },
   "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "glob": "^8.0.1",
+    "gray-matter": "^4.0.3",
     "vitepress": "^0.22.3"
   }
 }

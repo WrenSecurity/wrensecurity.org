@@ -15,7 +15,7 @@ features:
     details: Identity management system with flexible data model, multiple extension points and scripting support (Groovy and JavaScript). Can connect to and manage a wide range of systems through integrated Identity Connector Framework.
   - title: 🔐 Access Management
     details: Access management, entitlements and federation server platform. Provides centralized authentication and authorization for multiple realms with delegated administration.
-footer: CDDL Licensed | Copyright © 2017-2022 Wren Security
+footer: Copyright © 2017-2022 Wren Security
 ---
 
 
