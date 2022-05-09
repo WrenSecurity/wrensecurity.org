@@ -20,13 +20,13 @@ function formatDate(date) {
 <template>
   <h1>
     <a
-      v-if="!!link"
+      v-if="link"
       :href="withBase(link)"
     >{{ title }}</a>
     <span v-else>{{ title }}</span>
   </h1>
   <header>
-    <div>{{ author }}</div>
+    <div v-if="author">{{ author }}</div>
     <div>{{ formatDate(date) }}</div>
   </header>
 </template>
