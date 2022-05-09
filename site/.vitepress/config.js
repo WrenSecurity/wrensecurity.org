@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/wrensec-website/',
+  base: '/',
   title: 'Wren Security',
   description: 'The Wren Security Suite.',
   themeConfig: {
