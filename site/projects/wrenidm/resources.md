@@ -5,4 +5,5 @@ title: Wren:IDM
 
 ## Documentation
 
-Documentation is still work in progress. A Cookbook with common use cases will be ready soon.
+Project documentation can be found in our documentation platform ([docs.wrensecurity.org](https://docs.wrensecurity.org/wrenidm/latest/index.html)).
+Repository hosting cookbook with common use cases is available on [GitHub](https://github.com/WrenSecurity/wrenidm-cookbook).

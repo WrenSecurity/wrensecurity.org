@@ -5,6 +5,8 @@ heroImage: /wrensec-logo.png
 heroAlt: 'Wren Security logo'
 heroText: 'The Wren Security Suite'
 tagline: 'Community-driven, open-source software for user authentication, user identity management, and single-sign-on.'
+actionText: Get Started
+actionLink: https://docs.wrensecurity.org
 altActionText: View on GitHub
 altActionLink: https://github.com/WrenSecurity
 

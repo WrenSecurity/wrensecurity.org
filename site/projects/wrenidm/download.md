@@ -5,7 +5,7 @@ title: Wren:IDM
 
 # Getting Started
 
-You can get Wren:IDM application in couple of ways.
+You can get Wren:IDM application in a few ways.
 
 
 ## Download binary release
