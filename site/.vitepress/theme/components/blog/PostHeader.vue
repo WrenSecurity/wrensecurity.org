@@ -33,6 +33,7 @@ function formatDate(date) {
 
 <style scoped>
 h1 {
+  margin-top: 1.5rem;
   margin-bottom: 5px;
 }
 
