@@ -9,10 +9,14 @@ export default defineConfig({
     head: [
       ["meta", { name: "viewport", content: "width=device-width, initial-scale=1" } ],
     ],
+    footer: {
+      copyright: 'Copyright © 2017-2022 Wren Security'
+    },
     nav: [
       {
         text: "Home",
-        link: "/" },
+        link: "/"
+      },
       {
         text: "Projects",
         items: [
@@ -34,14 +38,15 @@ export default defineConfig({
         ]
       },
       {
-        text: "Sponsors", link: "/sponsors"
+        text: "Sponsors",
+        link: "/sponsors"
       },
     ],
     sidebar: {
       "/projects/wrenidm": [
         {
           text: "Wren:IDM",
-          children: [
+          items: [
             { text: "Overview", link: "/projects/wrenidm/" },
             { text: "Getting Started", link: "/projects/wrenidm/download" },
             { text: "Resources", link: "/projects/wrenidm/resources" },
@@ -51,7 +56,7 @@ export default defineConfig({
       "/projects/wrenam": [
         {
           text: "Wren:AM",
-          children: [
+          items: [
             { text: "Overview", link: "/projects/wrenam/" },
           ]
         },
@@ -59,7 +64,7 @@ export default defineConfig({
       "/projects/wrends": [
         {
           text: "Wren:DS",
-          children: [
+          items: [
             { text: "Overview", link: "/projects/wrends/" },
           ]
         },
@@ -67,14 +72,19 @@ export default defineConfig({
       "/projects/wrenicf": [
         {
           text: "Wren:ICF",
-          children: [
+          items: [
             { text: "Overview", link: "/projects/wrenicf/" },
           ]
         },
       ],
       "/community/": [
-        { text: "Contact", link: "/community/contact" },
-        { text: "Get Involved", link: "/community/join" },
+        {
+          text: 'Community',
+          items: [
+            { text: "Contact", link: "/community/contact" },
+            { text: "Get Involved", link: "/community/join" },
+          ]
+        }
       ],
     },
   },

@@ -1,13 +1,37 @@
 :root {
-  --c-brand: #c12233;
-  --c-brand-light: #da3244;
+  --vp-c-brand: #c12233;
+  --vp-c-brand-light: #dd3e4f;
+  --vp-c-brand-lighter: #e15665;
+  --vp-c-brand-dark: #dd3e4f;
+  --vp-c-brand-darker: #e05161;
 }
 
-.nav-bar .logo {
-  height: 30px;
-  margin-right: 8px;
+.dark {
+  --vp-c-brand: #dd3e4f;
 }
 
-.home-hero .figure .image {
-  max-height: 220px;
+.dark img {
+  filter: grayscale(1) invert(1);
+}
+
+.project-origin {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-origin .custom-block {
+  max-width: 1152px;
+}
+
+@media (min-width: 640px) {
+  .project-origin {
+    padding: 16px 48px;
+  }
+}
+
+@media (min-width: 960px) {
+  .project-origin {
+    padding: 16px 64px;
+  }
 }

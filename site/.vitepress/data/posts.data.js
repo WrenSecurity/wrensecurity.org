@@ -4,8 +4,6 @@ import glob from 'glob'
 import matter from 'gray-matter'
 import { createMarkdownRenderer } from 'vitepress'
 
-const md = createMarkdownRenderer(process.cwd())
-
 const cache = new Map()
 
 /**
@@ -29,7 +27,7 @@ function createPost(filePath) {
     link: `${path.relative(baseDir, filePath).replace(/\.md$/, '.html')}`,
     date: data.date,
     author: data.author,
-    excerpt: md.render(data.excerpt)
+    excerpt: data.excerpt
   }
   cache.set(filePath, { modifyTimestamp, post })
   return post
@@ -37,11 +35,16 @@ function createPost(filePath) {
 
 module.exports = {
   watch: '../../blog/**/*.md',
-  load() {
+  async load() {
     const posts = path.resolve(__dirname, '../../blog/**/*.md')
+    const md = await createMarkdownRenderer(process.cwd())
     return glob.
         sync(posts, { 'ignore': '**/index.md' }).
         map(file => createPost(file)).
+        map(post => {
+          post.excerpt = md.render(post.excerpt);
+          return post
+        }).
         sort((a, b) => b.date.getTime() - a.date.getTime())
   }
 }
