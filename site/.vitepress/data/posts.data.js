@@ -42,7 +42,7 @@ module.exports = {
         sync(posts, { 'ignore': '**/index.md' }).
         map(file => createPost(file)).
         map(post => {
-          post.excerpt = md.render(post.excerpt);
+          post.excerpt = md.render(post.excerpt)
           return post
         }).
         sort((a, b) => b.date.getTime() - a.date.getTime())
