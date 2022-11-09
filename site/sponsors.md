@@ -10,7 +10,7 @@ The following is a list of significant sponsors to Wren Security.
 Sponsors are listed in no particular order within each section.
 
 <Sponsor logo="orchitech.png">
-  <p><a href="https://orchi.tech/en/" target="_blank">Orchitech</a> is a tech company from Prague, Czech Republic, with our very own team of developers and more than a decade of experience with solutions for user identity management.</p>
+  <p><a href="https://orchi.tech/en/" target="_blank">Orchitech</a> is a tech company from Prague, with more than a decade of experience in identity and access management.</p>
 </Sponsor>
 
 
