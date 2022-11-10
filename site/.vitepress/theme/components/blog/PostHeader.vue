@@ -1,19 +1,16 @@
-<script setup>
-import { withBase } from 'vitepress'
+<script setup lang="ts">
+import { withBase } from 'vitepress';
 
-const props = defineProps({
+defineProps({
   title: { type: String, required: true },
   author: { type: String, required: true },
   date: { type: [String, Number], required: true },
   link: { type: String, required: false, default: null },
-})
+});
 
-function formatDate(date) {
-  let parsed = date
-  if (!(parsed instanceof Date)) {
-    parsed = new Date(date)
-  }
-  return parsed.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })
+function formatDate(date: number | string) {
+  let parsed = new Date(date);
+  return parsed.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
 }
 </script>
 
@@ -26,7 +23,9 @@ function formatDate(date) {
     <span v-else>{{ title }}</span>
   </h1>
   <header>
-    <div v-if="author">{{ author }}</div>
+    <div v-if="author">
+      {{ author }}
+    </div>
     <div>{{ formatDate(date) }}</div>
   </header>
 </template>

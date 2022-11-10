@@ -1,6 +1,6 @@
-<script setup>
-import { withBase } from 'vitepress'
-import { data as posts } from '../../../data/posts.data'
+<script setup lang="ts">
+import { withBase } from 'vitepress';
+import { data as posts } from '../../../data/posts.data';
 </script>
 
 <template>

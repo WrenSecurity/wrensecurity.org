@@ -1,13 +1,14 @@
-<script setup>
-import { withBase } from 'vitepress'
+<script setup lang="ts">
+import { withBase, useData } from 'vitepress';
+const { frontmatter } = useData();
 </script>
 
 <template>
   <article>
     <PostHeader
-      :title="$frontmatter.title"
-      :author="$frontmatter.author"
-      :date="$frontmatter.date"
+      :title="frontmatter.title"
+      :author="frontmatter.author"
+      :date="frontmatter.date"
     />
     <section>
       <slot />

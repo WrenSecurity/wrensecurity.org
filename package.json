@@ -1,17 +1,24 @@
 {
   "name": "wrensec-website",
   "version": "0.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "lint": "npx eslint 'site/.vitepress/**/*.{js,vue}'",
-    "site:dev": "vitepress dev site",
+    "lint": "npx eslint 'site/.vitepress/**/*.{ts,vue}'",
+    "site:dev": "vitepress dev site --port 3000",
     "site:build": "vitepress build site",
     "site:serve": "vitepress serve site"
   },
   "devDependencies": {
-    "eslint": "^8.14.0",
+    "@types/glob": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.27.0",
     "eslint-plugin-vue": "^8.7.1",
     "glob": "^8.0.1",
     "gray-matter": "^4.0.3",
-    "vitepress": "^1.0.0-alpha.4"
+    "typescript": "^4.8.4",
+    "vitepress": "^1.0.0-alpha.28",
+    "vue-eslint-parser": "^9.1.0"
   }
 }
