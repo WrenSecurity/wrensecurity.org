@@ -20,4 +20,4 @@ You can also run Wren:IDM in a Docker container. Official Wren:IDM Docker images
 
 ## Build the source code
 
-The last but not least you can create your own build from the source code. Manual how to build the source code can be found [here](https://github.com/WrenSecurity/wrenidm/blob/master/README.md#build-the-source-code).
+The last but not least you can create your own build from the source code. Manual how to build the source code can be found [here](https://github.com/WrenSecurity/wrenidm/blob/main/README.md#build-the-source-code).
