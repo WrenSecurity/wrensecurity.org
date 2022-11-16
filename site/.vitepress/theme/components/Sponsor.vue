@@ -1,9 +1,9 @@
-<script setup>
-import { withBase } from 'vitepress'
+<script setup lang="ts">
+import { withBase } from 'vitepress';
 
-const props = defineProps({
+defineProps({
   logo: { type: String, required: true }
-})
+});
 </script>
 
 <template>
