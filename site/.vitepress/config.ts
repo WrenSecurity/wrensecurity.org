@@ -66,6 +66,8 @@ export default defineConfig({
           text: 'Wren:DS',
           items: [
             { text: 'Overview', link: '/projects/wrends/' },
+            { text: 'Getting Started', link: '/projects/wrends/download' },
+            { text: 'Resources', link: '/projects/wrends/resources' },
           ]
         },
       ],
