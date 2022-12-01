@@ -58,6 +58,8 @@ export default defineConfig({
           text: 'Wren:AM',
           items: [
             { text: 'Overview', link: '/projects/wrenam/' },
+            { text: 'Getting Started', link: '/projects/wrenam/download' },
+            { text: 'Resources', link: '/projects/wrenam/resources' },
           ]
         },
       ],
