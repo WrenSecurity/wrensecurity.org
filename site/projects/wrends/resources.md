@@ -5,4 +5,4 @@ title: Wren:DS
 
 ## Documentation
 
-Documentation is still work in progress.
+Project documentation can be found in our documentation platform ([docs.wrensecurity.org](https://docs.wrensecurity.org/wrends/latest/index.html)).
