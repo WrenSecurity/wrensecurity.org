@@ -35,6 +35,7 @@ export default defineConfig({
         items: [
           { text: 'Contact', link: '/community/contact' },
           { text: 'Get Involved', link: '/community/join' },
+          { text: 'Disclosure Policy', link: '/community/disclosure' },
         ]
       },
       {
@@ -87,6 +88,7 @@ export default defineConfig({
           items: [
             { text: 'Contact', link: '/community/contact' },
             { text: 'Get Involved', link: '/community/join' },
+            { text: 'Disclosure Policy', link: '/community/disclosure' },
           ]
         }
       ],
