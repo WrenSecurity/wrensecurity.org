@@ -10,4 +10,4 @@ If you have any questions or comments about the software, please visit our [Gitt
 
 ## Security Issues
 
-If you think you have found a security vulnerability, please send email to [disclosure@wrensecurity.org](mailto:disclosure@wrensecurity.org). Only security issues should be sent to this address.
+If you think you have found a security vulnerability, please refer to [disclosure policy](disclosure).
