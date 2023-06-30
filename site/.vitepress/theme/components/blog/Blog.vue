@@ -26,6 +26,6 @@ import { data as posts } from '../../../data/posts.data';
 <style scoped>
 article + article {
   margin-top: 1.5rem;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--vp-c-divider);
 }
 </style>

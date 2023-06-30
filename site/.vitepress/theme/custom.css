@@ -4,14 +4,24 @@
   --vp-c-brand-lighter: #e15665;
   --vp-c-brand-dark: #dd3e4f;
   --vp-c-brand-darker: #e05161;
+  --vp-custom-block-tip-text: #155F3E;
+  --vp-custom-block-tip-bg: rgba(66, 184, 131, 0.05);
+  --vp-custom-block-tip-border: rgba(66, 184, 131, 0.5);
 }
 
 .dark {
   --vp-c-brand: #dd3e4f;
+  --vp-custom-block-tip-text: #42D392;
+  --vp-custom-block-tip-bg: rgba(66, 184, 131, 0.05);
+  --vp-custom-block-tip-border: rgba(66, 184, 131, 0.25);
 }
 
 .dark img {
   filter: grayscale(1) invert(1);
+}
+
+.dark .VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
 }
 
 .project-origin {

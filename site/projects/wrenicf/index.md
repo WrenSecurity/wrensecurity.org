@@ -14,7 +14,7 @@ The main project is [_Wren:ICF Java Framework_](https://github.com/WrenSecurity/
 various parts of the framework (specification, APIs, SPIs and network protocol) are forged, and it also provides the
 default connector runtime environment for the Java world.
 
-[_Wren:ICF .NET Framework_](https://github.com/WrenSecurity/wrenicf-dotnet-framework) is a connector framework
+[_Wren:ICF .NET Framework_](https://github.com/WrenSecurity/openicf-dotnet-framework) is a connector framework
 implementation and runtime environment for Microsoft's .NET world.
 
 
