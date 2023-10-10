@@ -6,6 +6,7 @@ export default defineConfig({
   description: 'The Wren Security Suite.',
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' } ],
+    ['meta', { name: 'theme-color', content: '#c12233' } ],
   ],
   themeConfig: {
     logo: '/wren.png',
@@ -95,7 +96,7 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/WrenSecurity' },
-      { icon: 'twitter', link: 'https://twitter.com/WrenSecurity' },
+      { icon: { svg: '<svg fill="#000000" viewBox="0 0 1200 1227" role="img"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/></svg>' }, link: 'https://twitter.com/WrenSecurity' },
       { icon: { svg: '<svg fill="#000000" viewBox="0 0 24 24" role="img"><path d="M8.501 4.001H10.5V24H8.501V4.001zm6.999 0V24h-2V4.001h2zM3.5 0h2.001v15H3.5V0zm15 4.001h2V15h-2V4.001z"/></svg>' }, link: 'https://gitter.im/WrenSecurity/Lobby' },
     ],
   },
