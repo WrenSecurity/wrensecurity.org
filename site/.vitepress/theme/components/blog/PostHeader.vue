@@ -3,22 +3,22 @@ import { withBase } from 'vitepress';
 
 defineProps({
   title: { type: String, required: true },
-  author: { type: String, required: true },
-  date: { type: [String, Number], required: true },
-  link: { type: String, required: false, default: null },
+  author: { type: String, required: false, default: null },
+  date: { type: String, required: true },
+  url: { type: String, required: false, default: null },
 });
 
-function formatDate(date: number | string) {
+function formatDate(date: string) {
   let parsed = new Date(date);
-  return parsed.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+  return parsed.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 </script>
 
 <template>
   <h1>
     <a
-      v-if="link"
-      :href="withBase(link)"
+      v-if="url"
+      :href="withBase(url)"
     >{{ title }}</a>
     <span v-else>{{ title }}</span>
   </h1>

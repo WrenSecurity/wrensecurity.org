@@ -1,24 +1,24 @@
 <script setup lang="ts">
 import { withBase } from 'vitepress';
-import { data as posts } from '../../../data/posts.data';
+import { data as posts } from '../../posts.data';
 </script>
 
 <template>
   <article
     v-for="post of posts"
-    :key="post.link"
+    :key="post.url"
   >
     <PostHeader
       :title="post.title"
       :author="post.author"
       :date="post.date"
-      :link="post.link"
+      :url="post.url"
     />
     <section>
-      <div v-html="post.excerpt" />
+      <p v-html="post.excerpt" />
     </section>
     <div>
-      <a :href="withBase(post.link)">Read more →</a>
+      <a :href="withBase(post.url)">Read more →</a>
     </div>
   </article>
 </template>
