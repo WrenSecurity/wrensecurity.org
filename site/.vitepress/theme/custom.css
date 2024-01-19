@@ -1,27 +1,32 @@
 :root {
-  --vp-c-brand: #c12233;
-  --vp-c-brand-light: #dd3e4f;
-  --vp-c-brand-lighter: #e15665;
-  --vp-c-brand-dark: #dd3e4f;
-  --vp-c-brand-darker: #e05161;
+  --vp-c-brand-1: #c12233;
+  --vp-c-brand-2: #d92639;
+  --vp-c-brand-3: #dd3c4d;
   --vp-custom-block-tip-text: #155F3E;
   --vp-custom-block-tip-bg: rgba(66, 184, 131, 0.05);
   --vp-custom-block-tip-border: rgba(66, 184, 131, 0.5);
 }
 
 .dark {
-  --vp-c-brand: #dd3e4f;
+  --vp-c-brand-1: #dd3e4f;
+  --vp-c-brand-2: #dd3c4d;
+  --vp-c-brand-3: #d92639;
   --vp-custom-block-tip-text: #42D392;
   --vp-custom-block-tip-bg: rgba(66, 184, 131, 0.05);
   --vp-custom-block-tip-border: rgba(66, 184, 131, 0.25);
+  --vp-c-gutter: var(--vp-c-divider);
 }
 
 .dark img {
   filter: grayscale(1) invert(1);
 }
 
-.dark .VPFooter {
-  border-top: 1px solid var(--vp-c-divider);
+.vp-doc a {
+  text-decoration: inherit;
+}
+
+.vp-doc a:hover {
+  text-decoration: underline;
 }
 
 .project-origin {
