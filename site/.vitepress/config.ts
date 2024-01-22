@@ -32,6 +32,7 @@ export default defineConfig({
           { text: 'Wren:IDM', link: '/projects/wrenidm/' },
           { text: 'Wren:AM', link: '/projects/wrenam/' },
           { text: 'Wren:DS', link: '/projects/wrends/' },
+          { text: 'Wren:IG', link: '/projects/wrenig/' },
           { text: 'Wren:ICF', link: '/projects/wrenicf/' },
         ]
       },
@@ -80,6 +81,16 @@ export default defineConfig({
             { text: 'Overview', link: '/projects/wrends/' },
             { text: 'Getting Started', link: '/projects/wrends/download' },
             { text: 'Resources', link: '/projects/wrends/resources' },
+          ]
+        },
+      ],
+      '/projects/wrenig': [
+        {
+          text: 'Wren:IG',
+          items: [
+            { text: 'Overview', link: '/projects/wrenig/' },
+            { text: 'Getting Started', link: '/projects/wrenig/download' },
+            { text: 'Resources', link: '/projects/wrenig/resources' },
           ]
         },
       ],
