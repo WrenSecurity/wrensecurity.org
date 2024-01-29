@@ -1,17 +1,10 @@
 import { createContentLoader } from 'vitepress';
-
-export interface Post {
-  title: string,
-  url: string,
-  date: string,
-  excerpt: string | undefined,
-  author: string | undefined
-}
+import type { Post } from './types/post';
 
 declare const data: Post[];
 export { data };
 
-export default createContentLoader('blog/**/!(*index).md', {
+export default createContentLoader('blog/**/!(index).md', {
   excerpt: true,
   transform(raw): Post[] {
     return raw

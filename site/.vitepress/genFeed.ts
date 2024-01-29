@@ -18,21 +18,18 @@ export async function genFeed(config: SiteConfig) {
       'Copyright © 2017-present Wren Security'
   });
 
-  const posts = await createContentLoader('blog/**/*.md', {
+  const posts = await createContentLoader('(blog|guide)/**/!(index).md', {
     excerpt: true,
     render: true
   }).load();
 
-  // Filter non-article post
-  const filteredPosts = posts.filter(post => post.url !== '/blog/index.html');
-
-  filteredPosts.sort(
+  posts.sort(
     (a, b) =>
       +new Date(b.frontmatter.date as string) -
       +new Date(a.frontmatter.date as string)
   );
 
-  for (const { url, frontmatter, html } of filteredPosts) {
+  for (const { url, frontmatter, html } of posts) {
     feed.addItem({
       title: frontmatter.title,
       id: `${baseUrl}${url}`,

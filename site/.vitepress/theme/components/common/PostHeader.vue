@@ -6,6 +6,7 @@ defineProps({
   author: { type: String, required: false, default: null },
   date: { type: String, required: true },
   url: { type: String, required: false, default: null },
+  project: { type: String, required: false, default: null },
 });
 
 function formatDate(date: string) {
@@ -23,6 +24,9 @@ function formatDate(date: string) {
     <span v-else>{{ title }}</span>
   </h1>
   <header>
+    <div v-if="project">
+      {{ project }}
+    </div>
     <div v-if="author">
       {{ author }}
     </div>

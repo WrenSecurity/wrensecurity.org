@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { data as posts } from '../../blog.data';
+import { data as posts } from '../../guide.data';
 </script>
 
 <template>
