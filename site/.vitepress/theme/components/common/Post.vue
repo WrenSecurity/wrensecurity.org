@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { withBase, useData } from 'vitepress';
+import { withBase, useData, useRoute } from 'vitepress';
 const { frontmatter } = useData();
+
+const path = useRoute().path;
 </script>
 
 <template>
@@ -14,7 +16,14 @@ const { frontmatter } = useData();
       <slot />
     </section>
     <div>
-      <a :href="withBase('/blog/')">← Back to the blog</a>
+      <a
+        v-if="path.startsWith('/guide')"
+        :href="withBase('/guide/')"
+      >← Back to guides</a>
+      <a
+        v-if="path.startsWith('/blog')"
+        :href="withBase('/blog/')"
+      >← Back to the blog</a>
     </div>
   </article>
 </template>
