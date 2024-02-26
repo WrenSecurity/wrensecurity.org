@@ -1,7 +1,7 @@
 import { App } from 'vue';
 import DefaultTheme from 'vitepress/theme';
 // Custom components
-import Sponsor from './components/Sponsor.vue';
+import Partners from './components/partner/Partners.vue';
 import Blog from './components/blog/Blog.vue';
 import PostList from './components/common/PostList.vue';
 import Post from './components/common/Post.vue';
@@ -13,7 +13,7 @@ import './custom.css';
 export default {
   ...DefaultTheme,
   enhanceApp({ app }: { app: App }) {
-    app.component('Sponsor', Sponsor);
+    app.component('Partners', Partners);
     app.component('PostList', PostList);
     app.component('Blog', Blog);
     app.component('Post', Post);

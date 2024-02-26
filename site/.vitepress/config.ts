@@ -53,8 +53,8 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Sponsors',
-        link: '/sponsors'
+        text: 'Partners',
+        link: '/partners'
       },
     ],
     sidebar: {
