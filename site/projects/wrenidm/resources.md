@@ -3,6 +3,8 @@ title: Wren:IDM
 ---
 
 
+# Resources
+
 ## Documentation
 
 Project documentation can be found in our documentation platform ([docs.wrensecurity.org](https://docs.wrensecurity.org/wrenidm/latest/index.html)).
