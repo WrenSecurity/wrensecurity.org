@@ -17,7 +17,7 @@ export default defineConfig({
     ]
   ],
   themeConfig: {
-    logo: '/wren.png',
+    logo: '/navbar-logo.png',
     footer: {
       copyright: 'Copyright © 2017-2024 Wren Security'
     },

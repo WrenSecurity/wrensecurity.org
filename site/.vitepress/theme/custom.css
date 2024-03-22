@@ -29,44 +29,18 @@
   text-decoration: underline;
 }
 
-.project-origin {
-  padding: 16px 24px;
-  display: flex;
-  justify-content: center;
-}
-
-.project-origin .custom-block {
-  max-width: 1152px;
-}
-
-.content-wrapper {
-  padding: 28px 24px;
-}
-
 @media (min-width: 640px) {
-  .content-wrapper {
-    padding: 28px 48px;
-  }
-  .project-origin {
-    padding: 16px 48px;
-  }
   .VPHome .VPHero p.text {
     font-size: 44px;
   }
 }
 
 @media (min-width: 960px) {
-  .content-wrapper {
-    padding: 28px 64px;
-  }
-  .project-origin {
-    padding: 16px 64px;
-  }
   .VPHome .VPHero p.text {
     font-size: 52px;
   }
 }
 
-.VPHome .VPHero {
+.VPContent .VPHome .VPHero {
   padding-bottom: 0;
 }
