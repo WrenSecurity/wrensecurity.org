@@ -73,7 +73,7 @@ import Feature from './Feature.vue';
           Extensions
         </template>
         <template #description>
-          Utilize a variety of extension points to customize the logic or the CRESTful interfaces to and make sure that
+          Utilize a variety of extension points to customize the logic or the CRESTful interfaces and make sure that
           the identity management smoothly integrates into your existing environment.
         </template>
       </Feature>
