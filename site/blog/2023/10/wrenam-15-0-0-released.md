@@ -8,6 +8,7 @@ sidebar: false
 ---
 
 <Post>
+
 We're thrilled to announce the release of the anticipated new version of Wren:AM. Following Wren:IDM and Wren:DS, it's now completely independent of the legacy infrastructure, features an upgraded technology stack, and is compatible with JDK 17 (with preparations for Jakarta EE). Additionally, we've addressed a significant number of issues from previous versions, predominantly the security ones.
 The project remains highly compatible with abandoned community versions of OpenAM, allowing for a seamless migration process, with the added option to leverage Docker images for added convenience.
 
