@@ -1,54 +1,58 @@
 <script setup lang="ts">
+import { withBase } from 'vitepress';
 import Features from './Features.vue';
 import Feature from './Feature.vue';
 </script>
 
 <template>
-  <Features :columns="4">
-    <Feature>
-      <template #title>
-        Comprehensive
-      </template>
-      <template #description>
-        All the tools you need for building reliable Identity and Access Management systems.
-      </template>
-    </Feature>
-    <Feature>
-      <template #title>
-        Versatile
-      </template>
-      <template #description>
-        Start small, adapt as needed, whether a basic tool or comprehensive IAM system.
-      </template>
-    </Feature>
-    <Feature>
-      <template #title>
-        Open
-      </template>
-      <template #description>
-        Completely open-source. Without vendor lock-in. No licensing fees.
-      </template>
-    </Feature>
-    <Feature>
-      <template #title>
-        Secure
-      </template>
-      <template #description>
-        Regular upgrades, security analysis, transparent vulnerability management - published as CVEs.
-      </template>
-    </Feature>
-  </Features>
+  <div class="wren-home-features">
+    <div class="wren-home-feature">
+      <div class="wren-home-feature-title">
+        <img :src="withBase('icon-gear.svg')">
+        <h3>Comprehensive</h3>
+      </div>
+      <p>All the tools you need for building reliable Identity and Access Management systems.</p>
+    </div>
+    <div class="wren-home-feature">
+      <div class="wren-home-feature-title">
+        <img :src="withBase('icon-puzzle.svg')">
+        <h3>Versatile</h3>
+      </div>
+      <p>Start small, adapt as needed, whether a basic tool or comprehensive IAM system.</p>
+    </div>
+    <div class="wren-home-feature">
+      <div class="wren-home-feature-title">
+        <img :src="withBase('icon-osi.svg')">
+        <h3>Open</h3>
+      </div>
+      <p>Completely open-source. Without vendor lock-in. No licensing fees.</p>
+    </div>
+    <div class="wren-home-feature">
+      <div class="wren-home-feature-title">
+        <img :src="withBase('icon-lock.svg')">
+        <h3>Secure</h3>
+      </div>
+      <p>Regular upgrades, security analysis, transparent vulnerability management - published as CVEs.</p>
+    </div>
+  </div>
 
   <div class="section-wrapper">
-    <h1>
-      Identity Management
-    </h1>
-    <p>
-      Regain control over people's access. Use Wren:IDM to streamline your identity governance and gain full control
-      over where and why users have access. Increase productivity with efficient access provisioning. Reduce operational
-      labour through automation and user self-service. And ensure that everyone has all the access they need, but no
-      other.
-    </p>
+    <div class="wren-project">
+      <div class="wren-project-image">
+        <img :src="withBase('project-idm-img.png')">
+      </div>
+      <div class="wren-project-description">
+        <h1>
+          Identity Management
+        </h1>
+        <p>
+          Regain control over people's access. Use Wren:IDM to streamline your identity governance and gain full control
+          over where and why users have access. Increase productivity with efficient access provisioning. Reduce operational
+          labour through automation and user self-service. And ensure that everyone has all the access they need, but no
+          other.
+        </p>
+      </div>
+    </div>
     <Features :columns="3">
       <Feature>
         <template #title>
@@ -107,14 +111,21 @@ import Feature from './Feature.vue';
   </div>
 
   <div class="section-wrapper">
-    <h1>
-      Access Management
-    </h1>
-    <p>
-      A secure portal for your digital services. Use Wren:AM to establish consistent access policies and advanced
-      observability across all your applications, cloud services and IT infrastructure with minimal effort. Avoid
-      multiple logins with Single Sign-On to deliver a superior login experience for your users.
-    </p>
+    <div class="wren-project">
+      <div class="wren-project-description">
+        <h1>
+          Access Management
+        </h1>
+        <p>
+          A secure portal for your digital services. Use Wren:AM to establish consistent access policies and advanced
+          observability across all your applications, cloud services and IT infrastructure with minimal effort. Avoid
+          multiple logins with Single Sign-On to deliver a superior login experience for your users.
+        </p>
+      </div>
+      <div class="wren-project-image">
+        <img :src="withBase('project-am-img.png')">
+      </div>
+    </div>
     <Features :columns="3">
       <Feature>
         <template #title>
@@ -201,13 +212,20 @@ import Feature from './Feature.vue';
   </div>
 
   <div class="section-wrapper">
-    <h1>
-      Directory Service
-    </h1>
-    <p>
-      Efficiently store and organize your digital identities, even in the most complex IT environments. Wren:DS provides
-      a secure and scalable directory service that complies with industry standards.
-    </p>
+    <div class="wren-project">
+      <div class="wren-project-image">
+        <img :src="withBase('project-ds-img.png')">
+      </div>
+      <div class="wren-project-description">
+        <h1>
+          Directory Service
+        </h1>
+        <p>
+          Efficiently store and organize your digital identities, even in the most complex IT environments. Wren:DS provides
+          a secure and scalable directory service that complies with industry standards.
+        </p>
+      </div>
+    </div>
     <Features :columns="3">
       <Feature>
         <template #title>
@@ -240,14 +258,21 @@ import Feature from './Feature.vue';
   </div>
 
   <div class="section-wrapper">
-    <h1>
-      Identity Gateway
-    </h1>
-    <p>
-      Place an identity gateway in front of your applications, microservices, and APIs to ensure consistent security
-      measures, regardless of their technology or authentication capabilities. Including the most problematic legacy
-      systems.
-    </p>
+    <div class="wren-project">
+      <div class="wren-project-description">
+        <h1>
+          Identity Gateway
+        </h1>
+        <p>
+          Place an identity gateway in front of your applications, microservices, and APIs to ensure consistent security
+          measures, regardless of their technology or authentication capabilities. Including the most problematic legacy
+          systems.
+        </p>
+      </div>
+      <div class="wren-project-image">
+        <img :src="withBase('project-ig-img.png')">
+      </div>
+    </div>
     <Features :columns="3">
       <Feature>
         <template #title>
@@ -312,7 +337,68 @@ import Feature from './Feature.vue';
 </template>
 
 <style scoped>
+.wren-home-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 58px;
+}
+
+@media (max-width: 960px) {
+  .wren-home-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .wren-home-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wren-home-feature-title {
+  display: flex;
+  column-gap: 8px;
+}
+
+.wren-home-feature-title img {
+  width: 24px;
+}
+
+.wren-home-feature-title h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
 .section-wrapper {
-  padding-top: 80px;
+  padding-top: 120px;
+}
+
+.section-wrapper p {
+  margin-bottom: 0;
+}
+
+.wren-project {
+  display: flex;
+  column-gap: 24px;
+}
+
+.wren-project-image {
+  width: 300px;
+  padding-inline: 48px;
+
+  > img {
+    filter: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .wren-project-image {
+    display: none;
+  }
+}
+
+.wren-project-description {
+  flex: 1;
 }
 </style>

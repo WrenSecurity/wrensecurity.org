@@ -15,7 +15,7 @@ defineProps({
   display: grid;
   grid-template-columns: repeat(v-bind(columns), 1fr);
   gap: 16px;
-  margin-top: 42px;
+  margin-top: 58px;
 }
 
 @media (max-width: 960px) {
