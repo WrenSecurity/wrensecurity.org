@@ -188,6 +188,15 @@ import Feature from './Feature.vue';
           the need to re-implement it in your apps.
         </template>
       </Feature>
+      <Feature>
+        <template #title>
+          Authorization
+        </template>
+        <template #description>
+          Consolidate the management of your access policies and implement fine-grained access control to
+          multiple resources using a central policy decision point.
+        </template>
+      </Feature>
     </Features>
   </div>
 
