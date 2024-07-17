@@ -15,9 +15,12 @@
   padding: 24px;
   border-radius: 12px;
 }
+
 .wren-feature h3 {
   margin: 0;
+  font-size: 18px;
 }
+
 .wren-feature p {
   margin-bottom: 0;
 }

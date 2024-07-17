@@ -30,11 +30,11 @@ export default defineConfig({
       {
         text: 'Projects',
         items: [
-          { text: 'Wren:IDM', link: '/projects/wrenidm/' },
           { text: 'Wren:AM', link: '/projects/wrenam/' },
           { text: 'Wren:DS', link: '/projects/wrends/' },
-          { text: 'Wren:IG', link: '/projects/wrenig/' },
           { text: 'Wren:ICF', link: '/projects/wrenicf/' },
+          { text: 'Wren:IDM', link: '/projects/wrenidm/' },
+          { text: 'Wren:IG', link: '/projects/wrenig/' },
         ]
       },
       {
@@ -59,16 +59,6 @@ export default defineConfig({
       },
     ],
     sidebar: {
-      '/projects/wrenidm': [
-        {
-          text: 'Wren:IDM',
-          items: [
-            { text: 'Overview', link: '/projects/wrenidm/' },
-            { text: 'Getting Started', link: '/projects/wrenidm/download' },
-            { text: 'Resources', link: '/projects/wrenidm/resources' },
-          ]
-        },
-      ],
       '/projects/wrenam': [
         {
           text: 'Wren:AM',
@@ -89,6 +79,24 @@ export default defineConfig({
           ]
         },
       ],
+      '/projects/wrenicf': [
+        {
+          text: 'Wren:ICF',
+          items: [
+            { text: 'Overview', link: '/projects/wrenicf/' },
+          ]
+        },
+      ],
+      '/projects/wrenidm': [
+        {
+          text: 'Wren:IDM',
+          items: [
+            { text: 'Overview', link: '/projects/wrenidm/' },
+            { text: 'Getting Started', link: '/projects/wrenidm/download' },
+            { text: 'Resources', link: '/projects/wrenidm/resources' },
+          ]
+        },
+      ],
       '/projects/wrenig': [
         {
           text: 'Wren:IG',
@@ -96,14 +104,6 @@ export default defineConfig({
             { text: 'Overview', link: '/projects/wrenig/' },
             { text: 'Getting Started', link: '/projects/wrenig/download' },
             { text: 'Resources', link: '/projects/wrenig/resources' },
-          ]
-        },
-      ],
-      '/projects/wrenicf': [
-        {
-          text: 'Wren:ICF',
-          items: [
-            { text: 'Overview', link: '/projects/wrenicf/' },
           ]
         },
       ],
