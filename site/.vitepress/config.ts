@@ -20,7 +20,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/navbar-logo.png',
     footer: {
-      copyright: 'Copyright © 2017-2024 Wren Security'
+      copyright: 'Copyright © 2017-2025 Wren Security'
     },
     nav: [
       {
