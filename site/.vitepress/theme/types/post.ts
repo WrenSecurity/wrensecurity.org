@@ -4,5 +4,5 @@ export interface Post {
   date: string,
   excerpt: string | undefined,
   author: string | undefined,
-  project: string | undefined,
+  project?: string | undefined,
 }

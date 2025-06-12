@@ -4,22 +4,23 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "npx eslint 'site/.vitepress/**/*.{ts,vue}'",
+    "lint": "npx eslint",
     "site:dev": "vitepress dev site --port 3000",
     "site:build": "vitepress build site",
     "site:serve": "vitepress serve site"
   },
   "devDependencies": {
-    "@types/glob": "^8.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
-    "eslint": "^8.27.0",
-    "eslint-plugin-vue": "^8.7.1",
-    "feed": "^4.2.2",
-    "glob": "^8.0.1",
+    "@eslint/js": "^9.28.0",
+    "@types/glob": "^8.1.0",
+    "eslint": "^9.28.0",
+    "eslint-plugin-vue": "^10.2.0",
+    "feed": "^5.1.0",
+    "glob": "^11.0.2",
+    "globals": "^16.2.0",
     "gray-matter": "^4.0.3",
-    "typescript": "^4.8.4",
-    "vitepress": "^1.3.1",
-    "vue-eslint-parser": "^9.1.0"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.0",
+    "vitepress": "^1.6.3",
+    "vue-eslint-parser": "^10.1.3"
   }
 }
