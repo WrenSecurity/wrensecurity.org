@@ -9,9 +9,10 @@ sidebar: false
   ];
   const implPartners = [
     { name: 'orchitech', url: 'https://orchi.tech/en/', logo: 'orchitech.png' },
-    { name: 'j3ag', url: 'https://www.j3ag.cz/', logo: 'j3ag.png' },
+    { name: 'idealit', url: 'https://idealit.cz/', logo: 'idealit.png' },
     { name: 'sonpo', url: 'https://www.sonpo.cz/en/', logo: 'sonpo.png' },
     { name: 'systemboost', url: 'https://www.system-boost.cz/en/', logo: 'systemboost.png' },
+    { name: 'j3ag', url: 'https://www.j3ag.cz/', logo: 'j3ag.png' },
   ];
   const infraPartners = [
     { name: 'jfrog', url: 'https://jfrog.com/artifactory/', logo: 'jfrog-artifactory.png' },
