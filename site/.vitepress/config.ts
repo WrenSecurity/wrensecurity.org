@@ -1,15 +1,25 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig, type HeadConfig } from 'vitepress';
 import { genFeed } from './genFeed.js';
+import { genRobots } from './genRobots.js';
 import llmstxt from 'vitepress-plugin-llms';
+
+const SITE_HOSTNAME = process.env.SITE_HOSTNAME || 'https://wrensecurity.org';
+const TWITTER_HANDLE = process.env.TWITTER_HANDLE || '@WrenSecurity';
+const GITHUB_URL = process.env.GITHUB_URL || 'https://github.com/WrenSecurity';
+const TWITTER_URL = process.env.TWITTER_URL || 'https://twitter.com/WrenSecurity';
 
 export default defineConfig({
   base: '/',
   title: 'Wren Security',
   description: 'The Wren Security Suite.',
   appearance: false,
+  sitemap: {
+    hostname: SITE_HOSTNAME,
+  },
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' } ],
     ['meta', { name: 'theme-color', content: '#7c1c39' } ],
+    ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'Wren Security Blog', href: '/feed.rss' }],
     [
       'script', {
         src: 'https://cdn.usefathom.com/script.js',
@@ -123,8 +133,8 @@ export default defineConfig({
       ],
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/WrenSecurity' },
-      { icon: 'x', link: 'https://twitter.com/WrenSecurity' },
+      { icon: 'github', link: GITHUB_URL },
+      { icon: 'x', link: TWITTER_URL },
       { icon: { svg: '<svg fill="#000000" viewBox="0 0 24 24" role="img"><path d="M8.501 4.001H10.5V24H8.501V4.001zm6.999 0V24h-2V4.001h2zM3.5 0h2.001v15H3.5V0zm15 4.001h2V15h-2V4.001z"/></svg>' }, link: 'https://gitter.im/WrenSecurity/Lobby' },
     ],
   },
@@ -132,10 +142,68 @@ export default defineConfig({
     // Ignore all localhost links
     /^https?:\/\/localhost/,
   ],
-  buildEnd: genFeed,
+  transformPageData(pageData) {
+    // Blog posts carry a summary in `excerpt`. Use it when the page has no explicit description.
+    const { description, excerpt } = pageData.frontmatter;
+    if (!description && typeof excerpt === 'string') {
+      pageData.description = excerpt.replace(/\s+/g, ' ').trim();
+    }
+  },
+  transformHead({ description, page, pageData, siteData }) {
+    if (page === '404.md') {
+      return [['meta', { name: 'robots', content: 'noindex' }]];
+    }
+
+    const htmlPath = page.replace(/\.md$/, '.html');
+    // The deployed site only serves clean (extensionless) URLs for index pages. Other pages keep the .html extension.
+    const cleanPath = htmlPath === 'index.html' ? '' : htmlPath.replace(/index\.html$/, '');
+    const url = `${SITE_HOSTNAME}/${cleanPath}`;
+    // Pages with a date (blog posts, guides) are articles.
+    const date = pageData.frontmatter.date;
+    const isArticle = Boolean(date);
+
+    const head: HeadConfig[] = [
+      ['link', { rel: 'canonical', href: url }],
+      ['meta', { property: 'og:type', content: isArticle ? 'article' : 'website' }],
+      ['meta', { property: 'og:url', content: url }],
+      ['meta', { property: 'og:site_name', content: siteData.title }],
+      ['meta', { property: 'og:title', content: pageData.title }],
+      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:image', content: `${SITE_HOSTNAME}/social/og-image.png` }],
+      ['meta', { property: 'og:image:width', content: '1200' }],
+      ['meta', { property: 'og:image:height', content: '630' }],
+      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+      ['meta', { name: 'twitter:site', content: TWITTER_HANDLE }],
+    ];
+
+    if (isArticle) {
+      // Frontmatter dates have no time part, so publish just the date (YYYY-MM-DD).
+      const publishedTime = new Date(date).toISOString().slice(0, 10);
+      head.push(['meta', { property: 'article:published_time', content: publishedTime }]);
+    }
+
+    if (page === 'index.md') {
+      // Structured data that lets search engines show the organization's logo and link its profiles.
+      const organization = {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: siteData.title,
+        url: SITE_HOSTNAME,
+        logo: `${SITE_HOSTNAME}/wrensec-logo.png`,
+        sameAs: [GITHUB_URL, TWITTER_URL],
+      };
+      head.push(['script', { type: 'application/ld+json' }, JSON.stringify(organization)]);
+    }
+
+    return head;
+  },
+  async buildEnd(config) {
+    await genFeed(config);
+    genRobots(config);
+  },
   vite: {
     plugins: [llmstxt({
-      domain: 'https://wrensecurity.org',
+      domain: SITE_HOSTNAME,
       excludeIndexPage: false,
       excludeBlog: false,
       // The homepage hero is a two-part headline. The llms.txt header needs the site name and a one-line summary instead.
