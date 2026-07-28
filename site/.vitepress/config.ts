@@ -1,13 +1,22 @@
 import { defineConfig } from 'vitepress';
 import { genFeed } from './genFeed.js';
 
+const SITE_HOSTNAME = process.env.SITE_HOSTNAME || 'https://wrensecurity.org';
+const TWITTER_HANDLE = process.env.TWITTER_HANDLE || '@WrenSecurity';
+const GITHUB_URL = process.env.GITHUB_URL || 'https://github.com/WrenSecurity';
+const TWITTER_URL = process.env.TWITTER_URL || 'https://twitter.com/WrenSecurity';
+
 export default defineConfig({
   base: '/',
   title: 'Wren Security',
   description: 'The Wren Security Suite.',
+  sitemap: {
+    hostname: SITE_HOSTNAME,
+  },
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' } ],
     ['meta', { name: 'theme-color', content: '#c12233' } ],
+    ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'Wren Security Blog', href: '/feed.rss' }],
     [
       'script', {
         src: 'https://cdn.usefathom.com/script.js',
@@ -119,8 +128,8 @@ export default defineConfig({
       ],
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/WrenSecurity' },
-      { icon: 'x', link: 'https://twitter.com/WrenSecurity' },
+      { icon: 'github', link: GITHUB_URL },
+      { icon: 'x', link: TWITTER_URL },
       { icon: { svg: '<svg fill="#000000" viewBox="0 0 24 24" role="img"><path d="M8.501 4.001H10.5V24H8.501V4.001zm6.999 0V24h-2V4.001h2zM3.5 0h2.001v15H3.5V0zm15 4.001h2V15h-2V4.001z"/></svg>' }, link: 'https://gitter.im/WrenSecurity/Lobby' },
     ],
   },
@@ -128,5 +137,24 @@ export default defineConfig({
     // Ignore all localhost links
     /^https?:\/\/localhost/,
   ],
+  transformHead({ description, page, pageData, siteData }) {
+    const image = pageData.frontmatter.image || '/wrensec-logo.png';
+    const htmlPath = page.replace(/\.md$/, '.html');
+    // The deployed site only serves clean (extensionless) URLs for index pages; other pages keep the .html extension.
+    const cleanPath = htmlPath === 'index.html' ? '' : htmlPath.replace(/index\.html$/, '');
+    const url = `${SITE_HOSTNAME}/${cleanPath}`;
+
+    return [
+      ['link', { rel: 'canonical', href: url }],
+      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:url', content: url }],
+      ['meta', { property: 'og:site_name', content: siteData.title }],
+      ['meta', { property: 'og:title', content: pageData.title }],
+      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:image', content: `${SITE_HOSTNAME}${image}` }],
+      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+      ['meta', { name: 'twitter:site', content: TWITTER_HANDLE }],
+    ];
+  },
   buildEnd: genFeed
 });

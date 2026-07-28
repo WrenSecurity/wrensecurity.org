@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs';
 import { Feed } from 'feed';
 import { createContentLoader, type SiteConfig } from 'vitepress';
 
-const baseUrl = `https://wrensecurity.org`;
+const baseUrl = process.env.SITE_HOSTNAME || 'https://wrensecurity.org';
 
 export async function genFeed(config: SiteConfig) {
   const feed = new Feed({
@@ -12,7 +12,7 @@ export async function genFeed(config: SiteConfig) {
     id: baseUrl,
     link: baseUrl,
     language: 'en',
-    image: 'https://wrensecurity.org/wrensec-logo.png',
+    image: `${baseUrl}/wrensec-logo.png`,
     favicon: `${baseUrl}/favicon.ico`,
     copyright:
       'Copyright © 2017-present Wren Security'
@@ -39,7 +39,7 @@ export async function genFeed(config: SiteConfig) {
       author: [
         {
           name: 'Wren Security',
-          link: 'https://wrensecurity.org'
+          link: baseUrl
         }
       ],
       date: frontmatter.date
