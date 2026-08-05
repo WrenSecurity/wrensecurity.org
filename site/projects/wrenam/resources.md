@@ -1,7 +1,7 @@
 ---
 title: Wren:AM
+description: Where to find Wren:AM documentation and other project resources.
 ---
-
 
 # Resources
 

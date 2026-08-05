@@ -1,7 +1,7 @@
 ---
 title: Wren:DS
+description: Where to find Wren:DS documentation and other project resources.
 ---
-
 
 # Resources
 

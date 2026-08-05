@@ -1,7 +1,7 @@
 ---
 title: Wren:AM
+description: How to get Wren:AM - binary releases, Docker images, and building from source.
 ---
-
 
 # Getting Started
 

@@ -1,7 +1,7 @@
 ---
 title: Wren:IDM
+description: Where to find Wren:IDM documentation, the cookbook, and other project resources.
 ---
-
 
 # Resources
 

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress';
 import { genFeed } from './genFeed.js';
+import llmstxt from 'vitepress-plugin-llms';
 
 export default defineConfig({
   base: '/',
@@ -128,5 +129,13 @@ export default defineConfig({
     // Ignore all localhost links
     /^https?:\/\/localhost/,
   ],
-  buildEnd: genFeed
+  buildEnd: genFeed,
+  vite: {
+    plugins: [llmstxt({
+      domain: 'https://wrensecurity.org',
+      excludeIndexPage: false,
+      excludeBlog: false,
+      generateLLMFriendlyDocsForEachPage: false,
+    })],
+  }
 });
