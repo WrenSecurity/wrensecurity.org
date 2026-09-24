@@ -32,8 +32,8 @@ import { VPButton } from 'vitepress/theme';
       Use one component, or combine them into a broader IAM architecture for access management, lifecycle automation, directory services, gateway protection and integration.
     </p>
   </div>
-  <CardGrid>
-    <FeatureCard link="/projects/wrenidm/" linkText="Explore Wren:IDM">
+  <CardGrid :columns="2">
+    <FeatureCard link="/projects/wrenidm/" linkText="Explore Wren:IDM" logo="/project/wrenidm-icon.svg" logoAlt="Wren:IDM">
       <template #title>
         Identity Governance
       </template>
@@ -41,7 +41,7 @@ import { VPButton } from 'vitepress/theme';
         Manage identity lifecycle processes, provisioning, workflows, self-service and governance automation.
       </template>
     </FeatureCard>
-    <FeatureCard link="/projects/wrenam/" linkText="Explore Wren:AM">
+    <FeatureCard link="/projects/wrenam/" linkText="Explore Wren:AM" logo="/project/wrenam-icon.svg" logoAlt="Wren:AM">
       <template #title>
         Access Management & SSO
       </template>
@@ -49,7 +49,7 @@ import { VPButton } from 'vitepress/theme';
         Centralize authentication and authorization across applications and services, with federation and single sign-on.
       </template>
     </FeatureCard>
-    <FeatureCard link="/projects/wrends/" linkText="Explore Wren:DS">
+    <FeatureCard link="/projects/wrends/" linkText="Explore Wren:DS" logo="/project/wrends-icon.svg" logoAlt="Wren:DS">
       <template #title>
         Directory Services
       </template>
@@ -57,7 +57,7 @@ import { VPButton } from 'vitepress/theme';
         Store and serve identity data with a reliable LDAP directory foundation designed for enterprise workloads.
       </template>
     </FeatureCard>
-    <FeatureCard link="/projects/wrenig/" linkText="Explore Wren:IG">
+    <FeatureCard link="/projects/wrenig/" linkText="Explore Wren:IG" logo="/project/wrenig-icon.svg" logoAlt="Wren:IG">
       <template #title>
         Identity Gateway
       </template>
@@ -65,7 +65,7 @@ import { VPButton } from 'vitepress/theme';
         Protect applications, APIs and services with gateway-based access control and integration patterns.
       </template>
     </FeatureCard>
-    <FeatureCard link="/projects/wrenicf/" linkText="Explore Wren:ICF">
+    <FeatureCard link="/projects/wrenicf/" linkText="Explore Wren:ICF" logo="/project/wrenicf-icon.svg" logoAlt="Wren:ICF">
       <template #title>
         Connector Framework
       </template>
