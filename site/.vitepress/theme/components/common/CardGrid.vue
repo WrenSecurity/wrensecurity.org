@@ -10,13 +10,13 @@ withDefaults(
 </script>
 
 <template>
-  <div class="wren-feature-grid">
+  <div class="wren-card-grid">
     <slot />
   </div>
 </template>
 
 <style scoped>
-.wren-feature-grid {
+.wren-card-grid {
   display: grid;
   grid-template-columns: repeat(v-bind(columns), 1fr);
   gap: 16px;
@@ -24,13 +24,19 @@ withDefaults(
 }
 
 @media (max-width: 960px) {
-  .wren-feature-grid {
+  .wren-card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+@media (max-width: 768px) {
+  .wren-card-grid {
+    margin-top: 32px;
+  }
+}
+
 @media (max-width: 480px) {
-  .wren-feature-grid {
+  .wren-card-grid {
     grid-template-columns: 1fr;
   }
 }

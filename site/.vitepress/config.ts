@@ -32,24 +32,28 @@ export default defineConfig({
       },
       {
         text: 'Projects',
+        activeMatch: '^/projects/',
         items: [
-          { text: 'Wren:AM', link: '/projects/wrenam/' },
-          { text: 'Wren:DS', link: '/projects/wrends/' },
-          { text: 'Wren:ICF', link: '/projects/wrenicf/' },
-          { text: 'Wren:IDM', link: '/projects/wrenidm/' },
-          { text: 'Wren:IG', link: '/projects/wrenig/' },
+          { text: 'Wren:AM', link: '/projects/wrenam/', activeMatch: '^/projects/wrenam/' },
+          { text: 'Wren:DS', link: '/projects/wrends/', activeMatch: '^/projects/wrends/' },
+          { text: 'Wren:ICF', link: '/projects/wrenicf/', activeMatch: '^/projects/wrenicf/' },
+          { text: 'Wren:IDM', link: '/projects/wrenidm/', activeMatch: '^/projects/wrenidm/' },
+          { text: 'Wren:IG', link: '/projects/wrenig/', activeMatch: '^/projects/wrenig/' },
         ]
       },
       {
         text: 'Blog',
-        link: '/blog/'
+        link: '/blog/',
+        activeMatch: '^/blog/'
       },
       {
         text: 'Guides',
-        link: '/guide/'
+        link: '/guide/',
+        activeMatch: '^/guide/'
       },
       {
         text: 'Community',
+        activeMatch: '^/community/',
         items: [
           { text: 'Contact', link: '/community/contact' },
           { text: 'Get Involved', link: '/community/join' },
@@ -58,7 +62,11 @@ export default defineConfig({
       },
       {
         text: 'Partners',
-        link: '/partners'
+        link: '/partners/',
+        activeMatch: '^/partners/'
+      },
+      {
+        component: 'NavPartnerButton'
       },
     ],
     sidebar: {
@@ -117,6 +125,16 @@ export default defineConfig({
             { text: 'Contact', link: '/community/contact' },
             { text: 'Get Involved', link: '/community/join' },
             { text: 'Disclosure Policy', link: '/community/disclosure' },
+          ]
+        }
+      ],
+      '/partners': [
+        {
+          text: 'Partners',
+          items: [
+            { text: 'Partner Network', link: '/partners/' },
+            { text: 'Talk to a Partner', link: '/partners/talk-to-a-partner' },
+            { text: 'Become a Partner', link: '/partners/become-a-partner' },
           ]
         }
       ],

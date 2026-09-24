@@ -16,7 +16,10 @@ defineProps<{
       target="_blank"
       class="partner-item"
     >
-      <img :src="withBase('partner/' + partner.logo)">
+      <img
+        :src="withBase('/partner/' + partner.logo)"
+        :alt="partner.name"
+      >
     </a>
   </p>
 </template>
@@ -26,6 +29,12 @@ defineProps<{
   display: flex;
   flex-wrap: wrap;
   row-gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .partner-container {
+    justify-content: center;
+  }
 }
 
 .partner-item {

@@ -15,7 +15,7 @@ Wren:IG is a community‐developed reverse proxy server providing single sign-on
 the proxy. Wren:IG includes a number of pre-built filters to transform data of intercepted requests / responses.
 Scripted filter allows you to easily create your own filter using the Groovy language.
 
-<FeatureGrid :columns="2">
+<CardGrid :columns="2">
   <FeatureCard>
     <template #title>
       Protection
@@ -80,7 +80,7 @@ Scripted filter allows you to easily create your own filter using the Groovy lan
       Automatically supply credentials to legacy applications that don't support modern authentication protocols.
     </template>
   </FeatureCard>
-</FeatureGrid>
+</CardGrid>
 
 ## Acknowledgments
 
