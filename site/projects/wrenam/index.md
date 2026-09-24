@@ -12,7 +12,7 @@ A secure portal for your digital services. Use Wren:AM to establish consistent a
 observability across all your applications, cloud services and IT infrastructure with minimal effort. Avoid
 multiple logins with Single Sign-On to deliver a superior login experience for your users.
 
-<FeatureGrid :columns="2">
+<CardGrid :columns="2">
   <FeatureCard>
     <template #title>
       Single Sign-On
@@ -85,7 +85,7 @@ multiple logins with Single Sign-On to deliver a superior login experience for y
       Consolidate the management of your access policies and implement fine-grained access control to multiple resources using a central policy decision point.
     </template>
   </FeatureCard>
-</FeatureGrid>
+</CardGrid>
 
 ## Acknowledgments
 

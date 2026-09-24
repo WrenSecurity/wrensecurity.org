@@ -6,7 +6,7 @@ withDefaults(
   defineProps<{
     link?: string;
     linkText?: string;
-    variant?: 'soft' | 'outline';
+    variant?: 'soft' | 'outline' | 'outline-soft';
   }>(),
   {
     variant: 'soft'
@@ -36,7 +36,8 @@ withDefaults(
 }
 
 .wren-feature-card h3 {
-  margin: 0 0 16px;
+  /* Cancel extra space above text from line-height. */
+  margin: -5px 0 16px;
   font-size: 18px;
 }
 

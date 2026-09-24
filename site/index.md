@@ -32,7 +32,7 @@ import { VPButton } from 'vitepress/theme';
       Use one component, or combine them into a broader IAM architecture for access management, lifecycle automation, directory services, gateway protection and integration.
     </p>
   </div>
-  <FeatureGrid>
+  <CardGrid>
     <FeatureCard link="/projects/wrenidm/" linkText="Explore Wren:IDM">
       <template #title>
         Identity Governance
@@ -73,7 +73,7 @@ import { VPButton } from 'vitepress/theme';
         Connect identity systems to applications, directories and infrastructure using reusable integration patterns.
       </template>
     </FeatureCard>
-  </FeatureGrid>
+  </CardGrid>
 </div>
 
 <div class="wren-index-section">
@@ -105,7 +105,7 @@ import { VPButton } from 'vitepress/theme';
       Wren Security is built for teams that treat identity as critical infrastructure. Open code, standards-based architecture and documented upgrade paths help organizations inspect, maintain and evolve their IAM systems over time.
     </p>
   </div>
-  <FeatureGrid>
+  <CardGrid>
     <FeatureCard>
       <template #label>
         Open by default
@@ -139,7 +139,7 @@ import { VPButton } from 'vitepress/theme';
         Designed for modularity, stable operations, documented upgrade paths and long-term maintainability. We build software that endures, scales, and evolves alongside your organization.
       </template>
     </FeatureCard>
-  </FeatureGrid>
+  </CardGrid>
 </div>
 
 <ActionBanner>
@@ -152,7 +152,7 @@ import { VPButton } from 'vitepress/theme';
   <template #actions>
     <VPButton theme="alt" text="Explore the Platform" href="https://docs.wrensecurity.org" />
     <VPButton theme="alt" text="View on GitHub" href="https://github.com/WrenSecurity" />
-    <VPButton theme="alt" text="Talk to a Partner" href="/partners" />
+    <VPButton theme="alt" text="Talk to a Partner" href="/partners/talk-to-a-partner" />
   </template>
 </ActionBanner>
 
@@ -163,7 +163,7 @@ import { VPButton } from 'vitepress/theme';
 
 @media (max-width: 768px) {
   .wren-index-section {
-    padding-top: 48px;
+    padding-top: 64px;
   }
 }
 

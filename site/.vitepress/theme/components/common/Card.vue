@@ -1,7 +1,7 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    variant?: 'soft' | 'outline';
+    variant?: 'soft' | 'outline' | 'outline-soft';
   }>(),
   {
     variant: 'soft'
@@ -18,7 +18,7 @@ withDefaults(
 <style scoped>
 .wren-card {
   border-radius: 16px;
-  padding: 24px;
+  padding: 32px;
 }
 
 .wren-card-soft {
@@ -28,5 +28,10 @@ withDefaults(
 .wren-card-outline {
   background-color: transparent;
   border: 2px solid var(--vp-c-brand-1);
+}
+
+.wren-card-outline-soft {
+  background-color: transparent;
+  border: 2px solid var(--wren-card-outline-soft);
 }
 </style>
