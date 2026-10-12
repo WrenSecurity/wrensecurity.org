@@ -4,15 +4,17 @@
   --vp-c-brand-3: #7c1c39;
   --vp-c-bg-soft: #f5f5f2;
   --vp-button-alt-bg: #f5f5f2;
+  --vp-sidebar-bg-color: #f5f5f2;
   --vp-button-alt-hover-bg: #dfdfd6;
   --vp-custom-block-tip-text: #155F3E;
   --vp-custom-block-tip-bg: rgba(66, 184, 131, 0.05);
   --vp-custom-block-tip-border: rgba(66, 184, 131, 0.5);
+  --wren-card-outline-soft: #dfdfd6;
 }
 
 .VPNavBarTitle .logo {
   height: 36px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .vp-doc a.VPButton {
@@ -43,8 +45,19 @@
   margin-top: 16px;
 }
 
+@media (min-width: 960px) {
+  header.VPNav .VPNavBarTitle.has-sidebar .title {
+    border-bottom: none;
+  }
+
+  header.VPNav .VPNavBar.has-sidebar .divider {
+    padding-left: 0;
+  }
+}
+
 .wren-section-header h2 {
   margin: 0;
+  padding-top: 0;
   border-top: none;
   font-size: 32px;
   line-height: 32px;
@@ -59,4 +72,20 @@
 
 .wren-section-header p {
   margin: 32px 0 0;
+}
+
+/* Menu is too large to be displayed correctly on tablets - show hamburger menu also for tablets. */
+@media (min-width: 768px) and (max-width: 959px) {
+  .VPNav .VPNavBarMenu,
+  .VPNav .VPNavBarExtra {
+    display: none;
+  }
+
+  .VPNav .VPNavBarHamburger {
+    display: flex;
+  }
+
+  .VPNav .VPNavScreen {
+    display: block;
+  }
 }

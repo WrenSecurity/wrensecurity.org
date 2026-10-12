@@ -12,7 +12,7 @@ over where and why users have access. Increase productivity with efficient acces
 labour through automation and user self-service. And ensure that everyone has all the access they need, but no
 other.
 
-<FeatureGrid :columns="2">
+<CardGrid :columns="2">
   <FeatureCard>
     <template #title>
       Identity Lifecycle Management
@@ -61,7 +61,7 @@ other.
       With connectors provided by Wren:ICF framework you can manage every piece of software within your organization.
     </template>
   </FeatureCard>
-</FeatureGrid>
+</CardGrid>
 
 ## Acknowledgments
 

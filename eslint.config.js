@@ -20,7 +20,7 @@ export default defineConfig([
       parser: vueParser,
       ecmaVersion: 'latest',
       sourceType: 'module',
-      globals: globals.node,
+      globals: { ...globals.node, ...globals.browser },
       parserOptions: {
         parser: typescriptEslint.parser,
       },

@@ -30,8 +30,8 @@ import { VPButton } from 'vitepress/theme';
       Use one component, or combine them into a broader IAM architecture for access management, lifecycle automation, directory services, gateway protection and integration.
     </p>
   </div>
-  <FeatureGrid>
-    <FeatureCard link="/projects/wrenidm/" linkText="Explore Wren:IDM">
+  <CardGrid :columns="2">
+    <FeatureCard link="/projects/wrenidm/" linkText="Explore Wren:IDM" logo="/project/Wren-icon-IDM.svg" logoAlt="Wren:IDM">
       <template #title>
         Identity Governance
       </template>
@@ -39,7 +39,7 @@ import { VPButton } from 'vitepress/theme';
         Manage identity lifecycle processes, provisioning, workflows, self-service and governance automation.
       </template>
     </FeatureCard>
-    <FeatureCard link="/projects/wrenam/" linkText="Explore Wren:AM">
+    <FeatureCard link="/projects/wrenam/" linkText="Explore Wren:AM" logo="/project/Wren-icon-AM.svg" logoAlt="Wren:AM">
       <template #title>
         Access Management & SSO
       </template>
@@ -47,7 +47,7 @@ import { VPButton } from 'vitepress/theme';
         Centralize authentication and authorization across applications and services, with federation and single sign-on.
       </template>
     </FeatureCard>
-    <FeatureCard link="/projects/wrends/" linkText="Explore Wren:DS">
+    <FeatureCard link="/projects/wrends/" linkText="Explore Wren:DS" logo="/project/Wren-icon-DS.svg" logoAlt="Wren:DS">
       <template #title>
         Directory Services
       </template>
@@ -55,7 +55,7 @@ import { VPButton } from 'vitepress/theme';
         Store and serve identity data with a reliable LDAP directory foundation designed for enterprise workloads.
       </template>
     </FeatureCard>
-    <FeatureCard link="/projects/wrenig/" linkText="Explore Wren:IG">
+    <FeatureCard link="/projects/wrenig/" linkText="Explore Wren:IG" logo="/project/Wren-icon-IG.svg" logoAlt="Wren:IG">
       <template #title>
         Identity Gateway
       </template>
@@ -63,7 +63,7 @@ import { VPButton } from 'vitepress/theme';
         Protect applications, APIs and services with gateway-based access control and integration patterns.
       </template>
     </FeatureCard>
-    <FeatureCard link="/projects/wrenicf/" linkText="Explore Wren:ICF">
+    <FeatureCard link="/projects/wrenicf/" linkText="Explore Wren:ICF" logo="/project/Wren-icon-ICF.svg" logoAlt="Wren:ICF">
       <template #title>
         Connector Framework
       </template>
@@ -71,7 +71,7 @@ import { VPButton } from 'vitepress/theme';
         Connect identity systems to applications, directories and infrastructure using reusable integration patterns.
       </template>
     </FeatureCard>
-  </FeatureGrid>
+  </CardGrid>
 </div>
 
 <div class="wren-index-section">
@@ -103,7 +103,7 @@ import { VPButton } from 'vitepress/theme';
       Wren Security is built for teams that treat identity as critical infrastructure. Open code, standards-based architecture and documented upgrade paths help organizations inspect, maintain and evolve their IAM systems over time.
     </p>
   </div>
-  <FeatureGrid>
+  <CardGrid>
     <FeatureCard>
       <template #label>
         Open by default
@@ -137,7 +137,7 @@ import { VPButton } from 'vitepress/theme';
         Designed for modularity, stable operations, documented upgrade paths and long-term maintainability. We build software that endures, scales, and evolves alongside your organization.
       </template>
     </FeatureCard>
-  </FeatureGrid>
+  </CardGrid>
 </div>
 
 <ActionBanner>
@@ -150,7 +150,7 @@ import { VPButton } from 'vitepress/theme';
   <template #actions>
     <VPButton theme="alt" text="Explore the Platform" href="https://docs.wrensecurity.org" />
     <VPButton theme="alt" text="View on GitHub" href="https://github.com/WrenSecurity" />
-    <VPButton theme="alt" text="Talk to a Partner" href="/partners" />
+    <VPButton theme="alt" text="Talk to a Partner" href="/partners/talk-to-a-partner" />
   </template>
 </ActionBanner>
 
@@ -161,7 +161,7 @@ import { VPButton } from 'vitepress/theme';
 
 @media (max-width: 768px) {
   .wren-index-section {
-    padding-top: 48px;
+    padding-top: 64px;
   }
 }
 
