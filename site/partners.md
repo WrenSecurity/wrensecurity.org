@@ -1,5 +1,6 @@
 ---
 title: Partners
+description: Wren Security's certifying, implementation and infrastructure partners.
 sidebar: false
 ---
 

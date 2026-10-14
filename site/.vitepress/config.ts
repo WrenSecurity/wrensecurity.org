@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress';
 import { genFeed } from './genFeed.js';
+import llmstxt from 'vitepress-plugin-llms';
 
 export default defineConfig({
   base: '/',
@@ -131,5 +132,17 @@ export default defineConfig({
     // Ignore all localhost links
     /^https?:\/\/localhost/,
   ],
-  buildEnd: genFeed
+  buildEnd: genFeed,
+  vite: {
+    plugins: [llmstxt({
+      domain: 'https://wrensecurity.org',
+      excludeIndexPage: false,
+      excludeBlog: false,
+      // The homepage hero is a two-part headline. The llms.txt header needs the site name and a one-line summary instead.
+      customTemplateVariables: {
+        title: 'Wren Security',
+        description: 'An open-source, enterprise-ready IAM platform designed for long-term reliability. Modular, secure by design, and built on open standards.',
+      },
+    })],
+  }
 });

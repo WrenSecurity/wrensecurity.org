@@ -1,5 +1,6 @@
 ---
 title: Wren:AM
+description: Wren:AM is an open-source access management server with single sign-on, multi-factor and adaptive authentication, and federation over OAuth 2.0, OIDC and SAML.
 sidebarDepth: 2
 ---
 

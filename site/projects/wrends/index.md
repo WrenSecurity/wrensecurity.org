@@ -1,5 +1,6 @@
 ---
 title: Wren:DS
+description: Wren:DS is an open-source, LDAPv3-compliant directory service for the Java platform with a REST API, replication and fine-grained access control.
 sidebarDepth: 2
 ---
 

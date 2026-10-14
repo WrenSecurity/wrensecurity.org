@@ -1,5 +1,6 @@
 ---
 title: Wren:ICF
+description: Wren:ICF is the open-source Identity Connector Framework for Java and .NET, with ready-made connectors for LDAP, SQL, SSH, REST, PowerShell and more.
 sidebarDepth: 2
 ---
 

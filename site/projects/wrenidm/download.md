@@ -1,7 +1,7 @@
 ---
 title: Wren:IDM
+description: How to get Wren:IDM - binary releases, Docker images, and building from source.
 ---
-
 
 # Getting Started
 

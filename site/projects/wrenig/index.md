@@ -1,5 +1,6 @@
 ---
 title: Wren:IG
+description: Wren:IG is an open-source identity gateway that adds single sign-on and SAML, OAuth 2.0 and OpenID Connect protection to any application behind it.
 sidebarDepth: 2
 ---
 

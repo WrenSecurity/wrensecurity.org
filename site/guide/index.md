@@ -1,5 +1,6 @@
 ---
 title: Guides
+description: Hands-on guides for getting started with Wren Security products.
 sidebar: false
 ---
 

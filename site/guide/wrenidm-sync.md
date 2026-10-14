@@ -1,5 +1,6 @@
 ---
 title: Identity Synchronization With Wren:IDM
+description: Step-by-step example of provisioning users from a CSV file to LDAP with Wren:IDM reconciliation, using the Wren:IDM cookbook.
 date: 2023-11-29
 excerpt: |
   Explore provisioning in our new series of blog posts introducing crucial features of Wren:IDM.

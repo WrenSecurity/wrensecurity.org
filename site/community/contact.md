@@ -1,5 +1,6 @@
 ---
 title: Contact
+description: Where to get product support and how to report security issues in Wren Security projects.
 ---
 
 

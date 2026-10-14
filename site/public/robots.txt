@@ -1,0 +1,11 @@
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Applebot
+User-agent: Yandex
+User-agent: Baiduspider
+User-agent: SeznamBot
+Disallow: /*.md
+
+User-agent: *
+Allow: /

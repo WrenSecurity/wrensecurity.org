@@ -1,5 +1,6 @@
 ---
 title: Disclosure Policy
+description: How to report a security vulnerability in Wren Security software and how fixed vulnerabilities are published.
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: Wren:IDM
+description: Wren:IDM is an open-source identity management platform for identity lifecycle management, provisioning, approval workflows, auditing and user self-service.
 sidebarDepth: 2
 ---
 

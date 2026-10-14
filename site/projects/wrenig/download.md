@@ -1,7 +1,7 @@
 ---
 title: Wren:IG
+description: How to get Wren:IG - binary releases, Docker images, and building from source.
 ---
-
 
 # Getting Started
 

@@ -1,5 +1,6 @@
 ---
 title: Get Involved
+description: How to contribute to Wren Security - investigating bugs, answering questions, writing documentation, and open team roles.
 ---
 
 

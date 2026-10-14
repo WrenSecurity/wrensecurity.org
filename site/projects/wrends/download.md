@@ -1,7 +1,7 @@
 ---
 title: Wren:DS
+description: How to get Wren:DS - binary releases, Docker images, and building from source.
 ---
-
 
 # Getting Started
 
