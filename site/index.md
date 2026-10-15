@@ -1,6 +1,8 @@
 ---
 layout: home
-title: 'Home'
+title: 'Wren Security | Open-Source Identity & Access Management Platform'
+titleTemplate: false
+description: 'An open-source, enterprise-ready IAM platform designed for long-term reliability. Modular, secure by design, and built on open standards.'
 hero:
   name: Identity & Access Management
   text: Open-Source Platform
